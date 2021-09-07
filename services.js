@@ -2,7 +2,7 @@ const { Spinner } = require('cli-spinner')
 const keys = require('./keys.json')
 const axios = require('axios').create({
     baseURL: 'https://api.appcenter.ms/',
-    headers: { "X-API-Token": ["X-API-Token"] }
+    headers: { "X-API-Token": keys["X-API-Token"] }
 })
 
 /**
