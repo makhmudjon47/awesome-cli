@@ -45,7 +45,7 @@ async function buildAllBranches(props) {
     return result
 }
 
-export async function main() {
+module.exports.main = async function main() {
     try {
         const appResult = await selectApp()
         const branchResult = await selectBranch(appResult)
